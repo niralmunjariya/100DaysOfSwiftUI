@@ -2,7 +2,7 @@
 //  BookwormApp.swift
 //  Bookworm
 //
-//  Created by Derek on 12/9/21.
+//  Created by Niral Munjariya on 03/01/22.
 //
 
 import SwiftUI
@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct BookwormApp: App {
     @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
