@@ -54,7 +54,6 @@ struct UserDetailView: View {
                         .font(.title3)
                 }
                 
-                
                 Spacer()
                 
                 Section {
