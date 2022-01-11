@@ -27,6 +27,9 @@ struct ContentView: View {
                                 Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
                                     .foregroundColor(getStyleColor(item.amount))
                             }
+                            .accessibilityElement()
+                            .accessibilityLabel("\(item.name) with amount \(item.amount == 1 ? "1 rupee" : "\(item.amount) rupees") ")
+                            .accessibilityHint("Personal expense")
                         }
                         .onDelete { indexSet in
                             let originalIndexSet = getOriginalIndexSet(of: indexSet, items: expenses.personalExpenses)
@@ -44,6 +47,9 @@ struct ContentView: View {
                                 Text(item.amount, format: .currency(code: Locale.current.currencyCode ?? "USD"))
                                     .foregroundColor(getStyleColor(item.amount))
                             }
+                            .accessibilityElement()
+                            .accessibilityLabel("\(item.name) with amount \(item.amount == 1 ? "1 rupee" : "\(item.amount) rupees") ")
+                            .accessibilityHint("Business expense")
                         }
                         .onDelete { indexSet in
                             let originalIndexSet = getOriginalIndexSet(of: indexSet, items: expenses.businessExpenses)

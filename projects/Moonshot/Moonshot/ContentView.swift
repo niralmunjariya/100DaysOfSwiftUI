@@ -14,7 +14,7 @@ enum ViewMode {
 struct ContentView: View {
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
-    @State private var viewMode: ViewMode = .list
+    @State private var viewMode: ViewMode = .grid
     
     let columns = [
         GridItem(.adaptive(minimum: 150))

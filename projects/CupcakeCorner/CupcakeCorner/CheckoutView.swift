@@ -25,8 +25,10 @@ struct CheckoutView: View {
                         .scaledToFit()
                 } placeholder: {
                     ProgressView()
+                        .accessibilityElement()
                 }
                 .frame(height: 233)
+                .accessibilityElement()
                 
                 VStack {
                 

@@ -33,8 +33,11 @@ struct MissionsListView: View {
                         }
                         
                     }
+                    .accessibilityElement()
+                    .accessibilityLabel("Mission \(mission.displayName) launched on \(mission.formattedLaunchDate)")
                 }
                 .listRowBackground(Color.darkBackground)
+                
             }
             .listStyle(.plain)
         }
