@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45D9AC8C278FF65A0091AC4E /* MeetupContact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D9AC8A278FF65A0091AC4E /* MeetupContact+CoreDataClass.swift */; };
+		45D9AC8D278FF65A0091AC4E /* MeetupContact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D9AC8B278FF65A0091AC4E /* MeetupContact+CoreDataProperties.swift */; };
+		45D9AC8F278FF70C0091AC4E /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D9AC8E278FF70C0091AC4E /* LocationFetcher.swift */; };
 		45E6885F278EB25F005F421D /* MeetupContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6885E278EB25F005F421D /* MeetupContactsApp.swift */; };
 		45E68861278EB25F005F421D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E68860278EB25F005F421D /* ContentView.swift */; };
 		45E68863278EB261005F421D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E68862278EB261005F421D /* Assets.xcassets */; };
@@ -14,8 +17,6 @@
 		45E6886D278EB2BF005F421D /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6886C278EB2BF005F421D /* PhotoPicker.swift */; };
 		45E6886F278EB2ED005F421D /* PhotoSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6886E278EB2ED005F421D /* PhotoSaver.swift */; };
 		45E68874278EB40E005F421D /* MeetupContacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45E68872278EB40E005F421D /* MeetupContacts.xcdatamodeld */; };
-		45E68877278EB473005F421D /* MeetupContact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E68875278EB473005F421D /* MeetupContact+CoreDataClass.swift */; };
-		45E68878278EB473005F421D /* MeetupContact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E68876278EB473005F421D /* MeetupContact+CoreDataProperties.swift */; };
 		45E6887A278EB4B8005F421D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E68879278EB4B8005F421D /* DataController.swift */; };
 		45E6887C278EB8C7005F421D /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6887B278EB8C7005F421D /* FileManager.swift */; };
 		45E6887E278EBC6B005F421D /* AddContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6887D278EBC6B005F421D /* AddContactView.swift */; };
@@ -24,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45D9AC8A278FF65A0091AC4E /* MeetupContact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetupContact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		45D9AC8B278FF65A0091AC4E /* MeetupContact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetupContact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		45D9AC8E278FF70C0091AC4E /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		45E6885B278EB25F005F421D /* MeetupContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6885E278EB25F005F421D /* MeetupContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupContactsApp.swift; sourceTree = "<group>"; };
 		45E68860278EB25F005F421D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,8 +36,6 @@
 		45E6886C278EB2BF005F421D /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		45E6886E278EB2ED005F421D /* PhotoSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSaver.swift; sourceTree = "<group>"; };
 		45E68873278EB40E005F421D /* MeetupContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeetupContacts.xcdatamodel; sourceTree = "<group>"; };
-		45E68875278EB473005F421D /* MeetupContact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetupContact+CoreDataClass.swift"; sourceTree = "<group>"; };
-		45E68876278EB473005F421D /* MeetupContact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeetupContact+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		45E68879278EB4B8005F421D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		45E6887B278EB8C7005F421D /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		45E6887D278EBC6B005F421D /* AddContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactView.swift; sourceTree = "<group>"; };
@@ -71,8 +73,9 @@
 		45E6885D278EB25F005F421D /* MeetupContacts */ = {
 			isa = PBXGroup;
 			children = (
-				45E68875278EB473005F421D /* MeetupContact+CoreDataClass.swift */,
-				45E68876278EB473005F421D /* MeetupContact+CoreDataProperties.swift */,
+				45D9AC8A278FF65A0091AC4E /* MeetupContact+CoreDataClass.swift */,
+				45D9AC8B278FF65A0091AC4E /* MeetupContact+CoreDataProperties.swift */,
+				45D9AC8E278FF70C0091AC4E /* LocationFetcher.swift */,
 				45E6887D278EBC6B005F421D /* AddContactView.swift */,
 				45E68879278EB4B8005F421D /* DataController.swift */,
 				45E6885E278EB25F005F421D /* MeetupContactsApp.swift */,
@@ -167,17 +170,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45E68877278EB473005F421D /* MeetupContact+CoreDataClass.swift in Sources */,
+				45D9AC8F278FF70C0091AC4E /* LocationFetcher.swift in Sources */,
 				45E68882278EFED9005F421D /* DetailView.swift in Sources */,
 				45E6887E278EBC6B005F421D /* AddContactView.swift in Sources */,
-				45E68878278EB473005F421D /* MeetupContact+CoreDataProperties.swift in Sources */,
 				45E68861278EB25F005F421D /* ContentView.swift in Sources */,
 				45E6885F278EB25F005F421D /* MeetupContactsApp.swift in Sources */,
 				45E68874278EB40E005F421D /* MeetupContacts.xcdatamodeld in Sources */,
 				45E6887A278EB4B8005F421D /* DataController.swift in Sources */,
 				45E68880278EBCAA005F421D /* ContentView-ViewModel.swift in Sources */,
 				45E6887C278EB8C7005F421D /* FileManager.swift in Sources */,
+				45D9AC8D278FF65A0091AC4E /* MeetupContact+CoreDataProperties.swift in Sources */,
 				45E6886F278EB2ED005F421D /* PhotoSaver.swift in Sources */,
+				45D9AC8C278FF65A0091AC4E /* MeetupContact+CoreDataClass.swift in Sources */,
 				45E6886D278EB2BF005F421D /* PhotoPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,8 +316,9 @@
 				DEVELOPMENT_TEAM = KGH3UR528L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to capture a contact photo.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to save your current location.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to store your contact photos.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your contact photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,8 +348,9 @@
 				DEVELOPMENT_TEAM = KGH3UR528L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to capture a contact photo.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to save your current location.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to store your contact photos.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need to access your contact photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

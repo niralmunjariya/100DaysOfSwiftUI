@@ -2,7 +2,7 @@
 //  MeetupContact+CoreDataClass.swift
 //  MeetupContacts
 //
-//  Created by Niral Munjariya on 12/01/22.
+//  Created by Niral Munjariya on 13/01/22.
 //
 //
 

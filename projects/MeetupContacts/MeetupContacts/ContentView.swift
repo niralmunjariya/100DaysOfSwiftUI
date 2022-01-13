@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
@@ -35,8 +36,12 @@ struct ContentView: View {
                                         .resizable()
                                         .scaledToFit()
                                 }
-                                .frame(maxHeight: 60)
-                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                                .frame(maxWidth: 60,  maxHeight: 50)
+                                .clipShape(Circle())
+                                .overlay {
+                                    Circle()
+                                        .stroke(Color.gray.opacity(0.7), lineWidth: 1)
+                                }
                                 .padding(0)
                                 
                                 VStack (alignment: .leading) {
@@ -68,20 +73,21 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $viewModel.showingAddView){
-                AddContactView { photoId, name, notes in
-                    addContact(photoId: photoId, name: name, notes: notes)
+                AddContactView { location, photoId, name, notes in
+                    addContact(location: location, photoId: photoId, name: name, notes: notes)
                 }
             }
         }
     }
     
-    func addContact(photoId: UUID, name: String, notes: String) {
+    func addContact(location: CLLocationCoordinate2D, photoId: UUID, name: String, notes: String) {
         let newContact = MeetupContact(context: moc)
         newContact.id = UUID()
         newContact.photoId = photoId
+        newContact.latitude = location.latitude
+        newContact.longitude = location.longitude
         newContact.name = name
         newContact.notes = notes
-        print(newContact)
         if moc.hasChanges {
             do {
                 try moc.save()
